@@ -14,9 +14,12 @@ const char* SEARCH_PATH_RES = "res";
 const char* SEARCH_PATH_SE = "se";
 //gravity vector
 const Vec2 GRAVITY_ACCELERATION = Vec2(0,-3);
+//buoyancy vector
+const Vec2 IMPULSE_ACCELERATION = Vec2(0,180);
 
 MainScene::MainScene()
 :_stage(nullptr)
+,_isPress(false)
 {
 
 }
@@ -43,9 +46,25 @@ bool MainScene::init()
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_RES);
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_SE);
 
+	//make the stage
 	auto stage = Stage::create();
 	this->addChild(stage);
 	this->setStage(stage);
+
+	//when the screen is pressed, set a flag
+	auto listener = EventListenerTouchOneByOne::create();
+	listener->onTouchBegan = [this](Touch* touch,Event* event) {
+		this->setIsPress(true);
+		return true;
+	};
+	listener->onTouchEnded = [this](Touch* touch,Event* event) {
+		this->setIsPress(false);
+	};
+	listener->onTouchCancelled = [this](Touch* touch,Event* event) {
+		this->setIsPress(false);
+	};
+
+	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener,this);
 
 	//enable update() to be called every frames
 	this->scheduleUpdate();
@@ -79,5 +98,7 @@ Scene* MainScene::createScene()
 
 void MainScene::update(float dt)
 {
-
+	if (_isPress) {
+		_stage->getPlayer()->getPhysicsBody()->applyImpulse(IMPULSE_ACCELERATION);
+	}
 }

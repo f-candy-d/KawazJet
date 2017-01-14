@@ -59,5 +59,12 @@ bool Player::init()
 
 void Player::update(float dt)
 {
-
+	//add the player acceleration every frames
+	this->getPhysicsBody()->applyImpulse(_acceleration);
+	//lateral velocity must be smaller than the limit velocity
+	auto v = this->getPhysicsBody()->getVelocity();
+	if (v.x > VELOCITY_LIMIT) {
+		v.x = VELOCITY_LIMIT;
+		this->getPhysicsBody()->setVelocity(v);
+	}
 }

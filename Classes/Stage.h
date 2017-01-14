@@ -25,7 +25,7 @@ public:
 	void update(float dt) override;
 
 	//tiled map
-	CC_SYNTHESIZE_RETAIN(cocos2d::TMXTiledMap*,_tiledMap,TileMap);
+	CC_SYNTHESIZE_RETAIN(cocos2d::TMXTiledMap*,_tiledMap,TiledMap);
 	//player
 	CC_SYNTHESIZE_RETAIN(Player*,_player,Player);
 	//cocos macro

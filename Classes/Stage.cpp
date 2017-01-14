@@ -24,6 +24,7 @@ bool Stage::init()
 	//make a node from map file
 	auto map = TMXTiledMap::create("stage1.tmx");
 	this->addChild(map);
+	this->setTiledMap(map);
 
 	//get terrainLayer
 	auto terrainLayer = map->getLayer("Terrain");
@@ -45,6 +46,13 @@ bool Stage::init()
 	player->setPosition(Vec2(40,160));
 	this->addChild(player);
 	this->setPlayer(player);
+
+	//follow the player untile it is in the map
+	// auto winSize = Director::getInstance()->getWinSize();
+	this->runAction(Follow::create(
+		player,
+		Rect(0,0,_tiledMap->getContentSize().width,_tiledMap->getContentSize().height)));
+
 
 	//enable update() to be called every frames
 	this->scheduleUpdate();

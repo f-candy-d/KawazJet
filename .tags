@@ -1,0 +1,23 @@
+__PLAYER_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^#define __PLAYER_H__$/;"	macro	line:2
+Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^class Player :public cocos2d::Sprite$/;"	class	line:6
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	bool init() override;$/;"	member	line:11	class:Player
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	void update(float dt) override;$/;"	member	line:16	class:Player
+__PLAYER_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^#define __PLAYER_H__$/;"	macro	line:2
+Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^class Player :public cocos2d::Sprite$/;"	class	line:6
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	bool init() override;$/;"	member	line:11	class:Player
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	void update(float dt) override;$/;"	member	line:16	class:Player
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
+FRAME_COUNT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int FRAME_COUNT = 4;$/;"	variable	line:7
+VELOCITY_LIMIT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int VELOCITY_LIMIT = 40;$/;"	variable	line:9
+INITIAL_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const Vec2 INITIAL_ACCELERATION = Vec2(200,0);$/;"	variable	line:11
+Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::Player()$/;"	function	line:14	class:Player	signature:()
+~Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::~Player()$/;"	function	line:19	class:Player	signature:()
+init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^bool Player::init()$/;"	function	line:24	class:Player	signature:()
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^void Player::update(float dt)$/;"	function	line:60	class:Player	signature:(float dt)

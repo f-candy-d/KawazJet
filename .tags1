@@ -1,0 +1,13 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	0	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+FRAME_COUNT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int FRAME_COUNT = 4;$/;"	variable	line:7
+VELOCITY_LIMIT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int VELOCITY_LIMIT = 40;$/;"	variable	line:9
+INITIAL_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const Vec2 INITIAL_ACCELERATION = Vec2(200,0);$/;"	variable	line:11
+Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::Player()$/;"	function	line:14	class:Player	signature:()
+~Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::~Player()$/;"	function	line:19	class:Player	signature:()
+init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^bool Player::init()$/;"	function	line:24	class:Player	signature:()
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^void Player::update(float dt)$/;"	function	line:60	class:Player	signature:(float dt)

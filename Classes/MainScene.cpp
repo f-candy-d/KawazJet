@@ -19,7 +19,9 @@ const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);
 
 MainScene::MainScene()
 :_stage(nullptr)
+,_coinLabel(nullptr)
 ,_isPress(false)
+,_coin(0)
 {
 
 }
@@ -27,6 +29,7 @@ MainScene::MainScene()
 MainScene::~MainScene()
 {
 	CC_SAFE_RELEASE_NULL(_stage);
+	CC_SAFE_RELEASE_NULL(_coinLabel);
 }
 
 // bool MainScene::init()
@@ -81,12 +84,25 @@ bool MainScene::initWithLevel(int level)
 
 		//if the player and an enemy collide,game is over.
 		if (category & static_cast<int>(Stage::TyleType::ENEMY)) {
-			// this->onGameOver();
+			this->onGameOver();
+		} else if(category & static_cast<int>(Stage::TyleType::COIN)) {
+			//remove coin from the Stage
+			body->getNode()->removeFromParent();
+			_coin++;
+			this->getCoinLabel()->setString(StringUtils::toString(_coin));
 		}
 
 		return true;
 	};
 	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener,this);
+
+	auto winSize = Director::getInstance()->getWinSize();
+	//displaying the number of coins Label
+	auto label = Label::createWithCharMap("numbers.png",16,18,'0');
+	this->addChild(label);
+	label->setPosition(Vec2(400,winSize.height - 60));
+	label->enableShadow();
+	this->setCoinLabel(label);
 
 	//enable update() to be called every frames
 	this->scheduleUpdate();

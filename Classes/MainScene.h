@@ -42,8 +42,11 @@ public:
 	// CREATE_FUNC(MainScene);
 	//Stage
 	CC_SYNTHESIZE_RETAIN(Stage*,_stage,Stage);
+	CC_SYNTHESIZE_RETAIN(cocos2d::Label*,_coinLabel,CoinLabel);
 	//If the screen is pressed this flag has true,or false
 	CC_SYNTHESIZE(bool,_isPress,IsPress);
+	//the number of coins that the player get
+	CC_SYNTHESIZE(int,_coin,Coin);
 };
 
 #endif /*defined(__MAIN_SCENE_H__) */

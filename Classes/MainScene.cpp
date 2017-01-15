@@ -20,6 +20,7 @@ const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);
 MainScene::MainScene()
 :_stage(nullptr)
 ,_coinLabel(nullptr)
+,_parallaxNode(nullptr)
 ,_isPress(false)
 ,_coin(0)
 {
@@ -30,6 +31,7 @@ MainScene::~MainScene()
 {
 	CC_SAFE_RELEASE_NULL(_stage);
 	CC_SAFE_RELEASE_NULL(_coinLabel);
+	CC_SAFE_RELEASE_NULL(_parallaxNode);
 }
 
 // bool MainScene::init()
@@ -50,10 +52,26 @@ bool MainScene::initWithLevel(int level)
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_RES);
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_SE);
 
+	auto winSize = Director::getInstance()->getWinSize();
+
 	//make the stage
 	auto stage = Stage::createWithLevel(level);
-	this->addChild(stage);
 	this->setStage(stage);
+
+	//parallax background
+	auto background = Sprite::create("background.png");
+	background->setAnchorPoint(Vec2::ANCHOR_BOTTOM_LEFT);
+	auto parallaxNode = ParallaxNode::create();
+	this->setParallaxNode(parallaxNode);
+	this->addChild(parallaxNode);
+
+	auto mapWidh = stage->getTiledMap()->getContentSize().width;
+	auto backgroundWidth = background->getContentSize().width;
+	auto scrollRatio = (backgroundWidth - winSize.width) / mapWidh;
+
+	parallaxNode->addChild(background,0,Vec2(scrollRatio,0),Vec2::ZERO);
+
+	this->addChild(stage);
 
 	//when the screen is pressed, set a flag
 	auto listener = EventListenerTouchOneByOne::create();
@@ -96,13 +114,13 @@ bool MainScene::initWithLevel(int level)
 	};
 	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener,this);
 
-	auto winSize = Director::getInstance()->getWinSize();
 	//displaying the number of coins Label
 	auto label = Label::createWithCharMap("numbers.png",16,18,'0');
 	this->addChild(label);
-	label->setPosition(Vec2(400,winSize.height - 60));
+	label->setPosition(Vec2(winSize.width / 2.0,winSize.height - 20));
 	label->enableShadow();
 	this->setCoinLabel(label);
+
 
 	//enable update() to be called every frames
 	this->scheduleUpdate();
@@ -114,6 +132,11 @@ void MainScene::onGameOver()
 {
 	//remove player from the parent node
 	_stage->getPlayer()->removeFromParent();
+
+	//show particle
+	auto explosion = ParticleExplosion::create();
+	explosion->setPosition(_stage->getPlayer()->getPosition());
+	_stage->addChild(explosion);
 
 	auto winSize = Director::getInstance()->getWinSize();
 
@@ -169,6 +192,9 @@ Scene* MainScene::createSceneWithLevel(int level)
 
 void MainScene::update(float dt)
 {
+	//move background depending on the player`s moving
+	_parallaxNode->setPosition(_stage->getPlayer()->getPosition() * -1);
+
 	if (_isPress) {
 		_stage->getPlayer()->getPhysicsBody()->applyImpulse(IMPULSE_ACCELERATION);
 	}

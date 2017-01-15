@@ -69,8 +69,21 @@ bool MainScene::initWithLevel(int level)
 
 	//get contact among physicsbodys
 	auto contactListener = EventListenerPhysicsContact::create();
-	contactListener->onContactBegin = [](PhysicsContact& contact) {
-		log("hit");
+	contactListener->onContactBegin = [this](PhysicsContact& contact) {
+		// log("hit")
+		//get non player physicsbody
+		auto otherShape = contact.getShapeA()->getBody() == _stage->getPlayer()->getPhysicsBody()
+						? contact.getShapeB()
+						: contact.getShapeA();
+		auto body = otherShape->getBody();
+		//get category
+		auto category = body->getCategoryBitmask();
+
+		//if the player and an enemy collide,game is over.
+		if (category & static_cast<int>(Stage::TyleType::ENEMY)) {
+			// this->onGameOver();
+		}
+
 		return true;
 	};
 	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener,this);
@@ -79,6 +92,31 @@ bool MainScene::initWithLevel(int level)
 	this->scheduleUpdate();
 
 	return true;
+}
+
+void MainScene::onGameOver()
+{
+	//remove player from the parent node
+	_stage->getPlayer()->removeFromParent();
+
+	auto winSize = Director::getInstance()->getWinSize();
+
+	//show 'Game-Over'
+	auto gameOver = Sprite::create("gameover.png");
+	gameOver->setPosition(Vec2(winSize.width / 2.0,winSize.height / 1.5));
+	this->addChild(gameOver);
+
+	//show 'Replay?' manu
+	auto menuItem = MenuItemImage::create("replay.png",
+										  "replay_pressed.png",
+									  	  [this](Ref* sender) {
+											  auto scene = MainScene::createSceneWithLevel(_stage->getLevel());
+											  auto transition = TransitionFade::create(1.0,scene);
+											  Director::getInstance()->replaceScene(transition);
+										  });
+	auto menu = Menu::create(menuItem,nullptr);
+	menu->setPosition(Vec2(winSize.width / 2.0,winSize.height / 3.0));
+	this->addChild(menu);
 }
 
 // Scene* MainScene::createScene()
@@ -117,5 +155,17 @@ void MainScene::update(float dt)
 {
 	if (_isPress) {
 		_stage->getPlayer()->getPhysicsBody()->applyImpulse(IMPULSE_ACCELERATION);
+	}
+
+	auto winSize = Director::getInstance()->getWinSize();
+	auto position = _stage->getPlayer()->getPosition();
+	const auto margin = 50;
+	//if the player is out of the map,game is over.
+	if(position.y < -margin || position.y >= winSize.height + margin) {
+		//avoid calling onGameOver() function many times,
+		//do not call it only when the player is in the map.
+		if(_stage->getPlayer()->getParent() != nullptr) {
+			this->onGameOver();
+		}
 	}
 }

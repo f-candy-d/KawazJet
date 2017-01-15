@@ -20,6 +20,12 @@ protected:
 	bool initWithLevel(int level);
 
 private:
+	/**
+	 * [onGameOver description]
+	 * This function will be called when the player and an enemy collide
+	 * or the player goes out of map.
+	 */
+	void onGameOver();
 
 public:
 	// static cocos2d::Scene* createScene();

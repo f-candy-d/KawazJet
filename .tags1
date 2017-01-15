@@ -4,6 +4,20 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-__MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^#define __MAIN_SCENE_H__$/;"	macro	line:2
-MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:34	class:MainScene
+SEARCH_PATH_3D	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_3D = "3d";$/;"	variable	line:6
+SEARCH_PATH_FONTS	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_FONTS = "fonts";$/;"	variable	line:7
+SEARCH_PATH_IMAGE	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_IMAGE = "image";$/;"	variable	line:8
+SEARCH_PATH_IMAGE_HD	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_IMAGE_HD = "inage-hd";$/;"	variable	line:9
+SEARCH_PATH_MAP	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MAP = "map";$/;"	variable	line:10
+SEARCH_PATH_MODEL	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MODEL = "model";$/;"	variable	line:11
+SEARCH_PATH_MUSIC	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MUSIC = "music";$/;"	variable	line:12
+SEARCH_PATH_RES	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_RES = "res";$/;"	variable	line:13
+SEARCH_PATH_SE	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_SE = "se";$/;"	variable	line:14
+GRAVITY_ACCELERATION	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 GRAVITY_ACCELERATION = Vec2(0,-10);$/;"	variable	line:16
+IMPULSE_ACCELERATION	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);$/;"	variable	line:18
+MainScene	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^MainScene::MainScene()$/;"	function	line:20	class:MainScene	signature:()
+~MainScene	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^MainScene::~MainScene()$/;"	function	line:27	class:MainScene	signature:()
+initWithLevel	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^bool MainScene::initWithLevel(int level)$/;"	function	line:33	class:MainScene	signature:(int level)
+onGameOver	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^void MainScene::onGameOver()$/;"	function	line:97	class:MainScene	signature:()
+createSceneWithLevel	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^Scene* MainScene::createSceneWithLevel(int level)$/;"	function	line:123	class:MainScene	signature:(int level)
+update	/home/daichi/dev/cocos.projects/KawazJet/Classes/MainScene.cpp	/^void MainScene::update(float dt)$/;"	function	line:154	class:MainScene	signature:(float dt)

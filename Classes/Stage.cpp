@@ -2,9 +2,13 @@
 
 USING_NS_CC;
 
+//the format of stage file.the file must be in the Resources/map/ directory
+const char* STAGE_FILE_FORMAT = "stage%d.tmx";
+
 Stage::Stage()
 :_tiledMap(nullptr)
 ,_player(nullptr)
+,_level(0)
 {
 
 }
@@ -15,14 +19,20 @@ Stage::~Stage()
 	CC_SAFE_RELEASE_NULL(_player);
 }
 
-bool Stage::init()
+// bool Stage::init()
+bool Stage::initWithLevel(int level)
 {
 	if (!Layer::init()) {
 		return false;
 	}
 
+	//set stage level
+	_level = level;
+
 	//make a node from map file
-	auto map = TMXTiledMap::create("stage1.tmx");
+	auto stageFile = StringUtils::format(STAGE_FILE_FORMAT,level);
+	// auto map = TMXTiledMap::create("stage1.tmx");
+	auto map = TMXTiledMap::create(stageFile);
 	this->addChild(map);
 	this->setTiledMap(map);
 
@@ -89,6 +99,20 @@ Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate
 
 		return sprite;
 	}
+
+	return nullptr;
+}
+
+Stage* Stage::createWithLevel(int level)
+{
+	Stage* ret = new Stage();
+	if (ret->initWithLevel(level)) {
+		ret->autorelease();
+
+		return ret;
+	}
+
+	CC_SAFE_RELEASE_NULL(ret);
 
 	return nullptr;
 }

@@ -72,24 +72,6 @@ visit	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^
 getDescription	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^std::string Value::getDescription() const$/;"	function	line:855	class:Value	signature:() const
 clear	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^void Value::clear()$/;"	function	line:862	class:Value	signature:()
 reset	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^void Value::reset(Type type)$/;"	function	line:904	class:Value	signature:(Type type)
-__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
-Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
-TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:35	class:Stage
-WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:36	class:Stage::TyleType
-PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:37	class:Stage::TyleType
-ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:38	class:Stage::TyleType
-COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:39	class:Stage::TyleType
-__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
-Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
-TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:35	class:Stage
-WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:36	class:Stage::TyleType
-PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:37	class:Stage::TyleType
-ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:38	class:Stage::TyleType
-COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:39	class:Stage::TyleType
 FRAME_COUNT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int FRAME_COUNT = 4;$/;"	variable	line:7
 VELOCITY_LIMIT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int VELOCITY_LIMIT = 40;$/;"	variable	line:9
 INITIAL_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const Vec2 INITIAL_ACCELERATION = Vec2(200,0);$/;"	variable	line:11
@@ -97,24 +79,34 @@ Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::Pla
 ~Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::~Player()$/;"	function	line:19	class:Player	signature:()
 init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^bool Player::init()$/;"	function	line:24	class:Player	signature:()
 update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^void Player::update(float dt)$/;"	function	line:64	class:Player	signature:(float dt)
-SEARCH_PATH_3D	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_3D = "3d";$/;"	variable	line:6
-SEARCH_PATH_FONTS	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_FONTS = "fonts";$/;"	variable	line:7
-SEARCH_PATH_IMAGE	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_IMAGE = "image";$/;"	variable	line:8
-SEARCH_PATH_IMAGE_HD	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_IMAGE_HD = "inage-hd";$/;"	variable	line:9
-SEARCH_PATH_MAP	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MAP = "map";$/;"	variable	line:10
-SEARCH_PATH_MODEL	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MODEL = "model";$/;"	variable	line:11
-SEARCH_PATH_MUSIC	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MUSIC = "music";$/;"	variable	line:12
-SEARCH_PATH_RES	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_RES = "res";$/;"	variable	line:13
-SEARCH_PATH_SE	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_SE = "se";$/;"	variable	line:14
-GRAVITY_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 GRAVITY_ACCELERATION = Vec2(0,-10);$/;"	variable	line:16
-IMPULSE_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);$/;"	variable	line:18
-MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^MainScene::MainScene()$/;"	function	line:20	class:MainScene	signature:()
-~MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^MainScene::~MainScene()$/;"	function	line:27	class:MainScene	signature:()
-init	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^bool MainScene::init()$/;"	function	line:32	class:MainScene	signature:()
-createScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^Scene* MainScene::createScene()$/;"	function	line:83	class:MainScene	signature:()
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^void MainScene::update(float dt)$/;"	function	line:107	class:MainScene	signature:(float dt)
-Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage()$/;"	function	line:5	class:Stage	signature:()
-~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:12	class:Stage	signature:()
-init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::init()$/;"	function	line:18	class:Stage	signature:()
-addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:63	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:96	class:Stage	signature:(float dt)
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:42	class:Stage
+TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:54	class:Stage
+WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:55	class:Stage::TyleType
+PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:56	class:Stage::TyleType
+ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:57	class:Stage::TyleType
+COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:58	class:Stage::TyleType
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:42	class:Stage
+TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:54	class:Stage
+WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:55	class:Stage::TyleType
+PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:56	class:Stage::TyleType
+ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:57	class:Stage::TyleType
+COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:58	class:Stage::TyleType
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:42	class:Stage
+TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:54	class:Stage
+WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:55	class:Stage::TyleType
+PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:56	class:Stage::TyleType
+ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:57	class:Stage::TyleType
+COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:58	class:Stage::TyleType
+STAGE_FILE_FORMAT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^const char* STAGE_FILE_FORMAT = "stage%d.tmx";$/;"	variable	line:6
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage()$/;"	function	line:8	class:Stage	signature:()
+~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:16	class:Stage	signature:()
+initWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::initWithLevel(int level)$/;"	function	line:23	class:Stage	signature:(int level)
+addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:73	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
+createWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage* Stage::createWithLevel(int level)$/;"	function	line:106	class:Stage	signature:(int level)
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:120	class:Stage	signature:(float dt)

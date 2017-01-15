@@ -9,7 +9,15 @@ class Stage :public cocos2d::Layer
 protected:
 	Stage();
 	virtual ~Stage();
-	bool init() override;
+	// bool init() override;
+	/**
+	 * [initWithLevel description]
+	 * Use this function instead of init().
+	 * @method initWithLevel
+	 * @param  level         [description]
+	 * @return               [description]
+	 */
+	bool initWithLevel(int level);
 
 private:
 	/**
@@ -22,6 +30,15 @@ private:
 	cocos2d::Sprite* addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate);
 
 public:
+	/**
+	 * [createWithLevel description]
+	 * Use this function instead of create().
+	 * @method createWithLevel
+	 * @param  level           [description]
+	 * @return                 [description]
+	 */
+	static Stage* createWithLevel(int level);
+
 	void update(float dt) override;
 
 	//tiled map
@@ -29,7 +46,9 @@ public:
 	//player
 	CC_SYNTHESIZE_RETAIN(Player*,_player,Player);
 	//cocos macro
-	CREATE_FUNC(Stage);
+	// CREATE_FUNC(Stage);
+	//stage level. this memver variable is read only
+	CC_SYNTHESIZE_READONLY(int,_level,Level);
 
 	//Tile type
 	enum class TyleType {

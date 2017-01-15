@@ -4,8 +4,10 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
-Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage()$/;"	function	line:5	class:Stage	signature:()
-~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:12	class:Stage	signature:()
-init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::init()$/;"	function	line:18	class:Stage	signature:()
-addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:63	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:96	class:Stage	signature:(float dt)
+STAGE_FILE_FORMAT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^const char* STAGE_FILE_FORMAT = "stage%d.tmx";$/;"	variable	line:6
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage()$/;"	function	line:8	class:Stage	signature:()
+~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:16	class:Stage	signature:()
+initWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::initWithLevel(int level)$/;"	function	line:23	class:Stage	signature:(int level)
+addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:73	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
+createWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage* Stage::createWithLevel(int level)$/;"	function	line:106	class:Stage	signature:(int level)
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:120	class:Stage	signature:(float dt)

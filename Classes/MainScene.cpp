@@ -46,8 +46,8 @@ bool MainScene::init()
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_RES);
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_SE);
 
-	//make the stage
-	auto stage = Stage::create();
+	//make the stage 1
+	auto stage = Stage::createWithLevel(1);
 	this->addChild(stage);
 	this->setStage(stage);
 

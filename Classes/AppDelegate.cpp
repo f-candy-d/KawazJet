@@ -8,6 +8,9 @@ static cocos2d::Size smallResolutionSize = cocos2d::Size(960, 640);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
+//initial stage level
+const int INITIAL_STAGE = 1;
+
 AppDelegate::AppDelegate()
 {
 }
@@ -74,7 +77,8 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = MainScene::createScene();
+    // auto scene = MainScene::createScene();
+    auto scene = MainScene::createSceneWithLevel(INITIAL_STAGE);
 
     // run
     director->runWithScene(scene);

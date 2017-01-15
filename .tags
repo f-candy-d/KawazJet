@@ -6,10 +6,6 @@ __PLAYER_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^#define
 Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^class Player :public cocos2d::Sprite$/;"	class	line:6
 override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	bool init() override;$/;"	member	line:11	class:Player
 override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.h	/^	void update(float dt) override;$/;"	member	line:16	class:Player
-__MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^#define __MAIN_SCENE_H__$/;"	macro	line:2
-MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	bool init() override;$/;"	member	line:12	class:MainScene
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:18	class:MainScene
 ValueVectorNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueVector ValueVectorNull;$/;"	variable	line:33
 ValueMapNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMap ValueMapNull;$/;"	variable	line:34
 ValueMapIntKeyNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMapIntKey ValueMapIntKeyNull;$/;"	variable	line:35
@@ -110,3 +106,12 @@ initWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool 
 addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:73	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
 createWithLevel	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage* Stage::createWithLevel(int level)$/;"	function	line:106	class:Stage	signature:(int level)
 update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:120	class:Stage	signature:(float dt)
+__MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^#define __MAIN_SCENE_H__$/;"	macro	line:2
+MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:34	class:MainScene
+__MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^#define __MAIN_SCENE_H__$/;"	macro	line:2
+MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:34	class:MainScene
+__MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^#define __MAIN_SCENE_H__$/;"	macro	line:2
+MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:34	class:MainScene

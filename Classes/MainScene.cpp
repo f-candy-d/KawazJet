@@ -29,7 +29,8 @@ MainScene::~MainScene()
 	CC_SAFE_RELEASE_NULL(_stage);
 }
 
-bool MainScene::init()
+// bool MainScene::init()
+bool MainScene::initWithLevel(int level)
 {
 	if (!Layer::init()) {
 		return false;
@@ -46,8 +47,8 @@ bool MainScene::init()
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_RES);
 	FileUtils::getInstance()->addSearchPath(SEARCH_PATH_SE);
 
-	//make the stage 1
-	auto stage = Stage::createWithLevel(1);
+	//make the stage
+	auto stage = Stage::createWithLevel(level);
 	this->addChild(stage);
 	this->setStage(stage);
 
@@ -80,7 +81,8 @@ bool MainScene::init()
 	return true;
 }
 
-Scene* MainScene::createScene()
+// Scene* MainScene::createScene()
+Scene* MainScene::createSceneWithLevel(int level)
 {
 	//make a scene which have a physics engine
 	auto scene = Scene::createWithPhysics();
@@ -98,7 +100,14 @@ Scene* MainScene::createScene()
 	world->setSpeed(6.0);
 
 	//make a Layer
-	auto layer = MainScene::create();
+	// auto layer = MainScene::create();
+	auto layer = new MainScene();
+	if (layer && layer->initWithLevel(level)) {
+		layer->autorelease();
+	} else {
+		CC_SAFE_DELETE(layer);
+	}
+
 	scene->addChild(layer);
 
 	return scene;

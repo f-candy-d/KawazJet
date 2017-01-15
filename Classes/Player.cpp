@@ -48,6 +48,10 @@ bool Player::init()
 
 	auto body = PhysicsBody::createCircle(this->getContentSize().width / 2.0);
 	body->setRotationEnable(false);
+	//set category
+	body->setCategoryBitmask(static_cast<int>(Stage::TyleType::PLAYER));
+	body->setCollisionBitmask(static_cast<int>(Stage::TyleType::WALL));
+	body->setContactTestBitmask(INT_MAX);
 	this->setPhysicsBody(body);
 
 	_acceleration = INITIAL_ACCELERATION;

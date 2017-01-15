@@ -8,4 +8,4 @@ Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage(
 ~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:12	class:Stage	signature:()
 init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::init()$/;"	function	line:18	class:Stage	signature:()
 addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:63	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:83	class:Stage	signature:(float dt)
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:96	class:Stage	signature:(float dt)

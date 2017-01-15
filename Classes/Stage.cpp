@@ -74,6 +74,19 @@ Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate
 		sprite->setAnchorPoint(Vec2::ANCHOR_MIDDLE);
 		sprite->setPhysicsBody(physicsbody);
 
+		//get tile id
+		auto gid = layer->getTileGIDAt(cooridnate);
+		//get tile properties
+		auto properties = _tiledMap->getPropertiesForGID(gid).asValueMap();
+		if (properties.count("category") > 0) {
+			auto category = properties.at("category").asInt();
+			//set property to a physicsbody
+			physicsbody->setCategoryBitmask(category);
+
+			physicsbody->setContactTestBitmask(static_cast<int>(TyleType::PLAYER));
+			physicsbody->setCollisionBitmask(static_cast<int>(TyleType::PLAYER));
+		}
+
 		return sprite;
 	}
 

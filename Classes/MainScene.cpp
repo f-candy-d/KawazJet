@@ -13,9 +13,9 @@ const char* SEARCH_PATH_MUSIC = "music";
 const char* SEARCH_PATH_RES = "res";
 const char* SEARCH_PATH_SE = "se";
 //gravity vector
-const Vec2 GRAVITY_ACCELERATION = Vec2(0,-3);
+const Vec2 GRAVITY_ACCELERATION = Vec2(0,-10);
 //buoyancy vector
-const Vec2 IMPULSE_ACCELERATION = Vec2(0,180);
+const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);
 
 MainScene::MainScene()
 :_stage(nullptr)
@@ -65,6 +65,14 @@ bool MainScene::init()
 	};
 
 	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(listener,this);
+
+	//get contact among physicsbodys
+	auto contactListener = EventListenerPhysicsContact::create();
+	contactListener->onContactBegin = [](PhysicsContact& contact) {
+		log("hit");
+		return true;
+	};
+	this->getEventDispatcher()->addEventListenerWithSceneGraphPriority(contactListener,this);
 
 	//enable update() to be called every frames
 	this->scheduleUpdate();

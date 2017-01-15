@@ -10,6 +10,93 @@ __MAIN_SCENE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^
 MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^class MainScene :public cocos2d::Layer$/;"	class	line:7
 override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	bool init() override;$/;"	member	line:12	class:MainScene
 override	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.h	/^	void update(float dt) override;$/;"	member	line:18	class:MainScene
+ValueVectorNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueVector ValueVectorNull;$/;"	variable	line:33
+ValueMapNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMap ValueMapNull;$/;"	variable	line:34
+ValueMapIntKeyNull	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMapIntKey ValueMapIntKeyNull;$/;"	variable	line:35
+Null	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const Value Value::Null;$/;"	member	line:37	class:Value	file:
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value()$/;"	function	line:39	class:Value	signature:()
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(unsigned char v)$/;"	function	line:45	class:Value	signature:(unsigned char v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(int v)$/;"	function	line:51	class:Value	signature:(int v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(unsigned int v)$/;"	function	line:57	class:Value	signature:(unsigned int v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(float v)$/;"	function	line:63	class:Value	signature:(float v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(double v)$/;"	function	line:69	class:Value	signature:(double v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(bool v)$/;"	function	line:75	class:Value	signature:(bool v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const char* v)$/;"	function	line:81	class:Value	signature:(const char* v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const std::string& v)$/;"	function	line:91	class:Value	signature:(const std::string& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const ValueVector& v)$/;"	function	line:98	class:Value	signature:(const ValueVector& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(ValueVector&& v)$/;"	function	line:105	class:Value	signature:(ValueVector&& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const ValueMap& v)$/;"	function	line:112	class:Value	signature:(const ValueMap& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(ValueMap&& v)$/;"	function	line:119	class:Value	signature:(ValueMap&& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const ValueMapIntKey& v)$/;"	function	line:126	class:Value	signature:(const ValueMapIntKey& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(ValueMapIntKey&& v)$/;"	function	line:133	class:Value	signature:(ValueMapIntKey&& v)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(const Value& other)$/;"	function	line:140	class:Value	signature:(const Value& other)
+Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::Value(Value&& other)$/;"	function	line:146	class:Value	signature:(Value&& other)
+~Value	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value::~Value()$/;"	function	line:152	class:Value	signature:()
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const Value& other)$/;"	function	line:157	class:Value	signature:(const Value& other)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (Value&& other)$/;"	function	line:216	class:Value	signature:(Value&& other)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (unsigned char v)$/;"	function	line:265	class:Value	signature:(unsigned char v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (int v)$/;"	function	line:272	class:Value	signature:(int v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (unsigned int v)$/;"	function	line:279	class:Value	signature:(unsigned int v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (float v)$/;"	function	line:286	class:Value	signature:(float v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (double v)$/;"	function	line:293	class:Value	signature:(double v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (bool v)$/;"	function	line:300	class:Value	signature:(bool v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const char* v)$/;"	function	line:307	class:Value	signature:(const char* v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const std::string& v)$/;"	function	line:314	class:Value	signature:(const std::string& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const ValueVector& v)$/;"	function	line:321	class:Value	signature:(const ValueVector& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (ValueVector&& v)$/;"	function	line:328	class:Value	signature:(ValueVector&& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const ValueMap& v)$/;"	function	line:335	class:Value	signature:(const ValueMap& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (ValueMap&& v)$/;"	function	line:342	class:Value	signature:(ValueMap&& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (const ValueMapIntKey& v)$/;"	function	line:349	class:Value	signature:(const ValueMapIntKey& v)
+operator =	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^Value& Value::operator= (ValueMapIntKey&& v)$/;"	function	line:356	class:Value	signature:(ValueMapIntKey&& v)
+operator !=	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^bool Value::operator!= (const Value& v)$/;"	function	line:363	class:Value	signature:(const Value& v)
+operator !=	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^bool Value::operator!= (const Value& v) const$/;"	function	line:367	class:Value	signature:(const Value& v) const
+operator ==	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^bool Value::operator== (const Value& v)$/;"	function	line:372	class:Value	signature:(const Value& v)
+operator ==	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^bool Value::operator== (const Value& v) const$/;"	function	line:377	class:Value	signature:(const Value& v) const
+asByte	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^unsigned char Value::asByte() const$/;"	function	line:442	class:Value	signature:() const
+asInt	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^int Value::asInt() const$/;"	function	line:484	class:Value	signature:() const
+asUnsignedInt	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^unsigned int Value::asUnsignedInt() const$/;"	function	line:527	class:Value	signature:() const
+asFloat	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^float Value::asFloat() const$/;"	function	line:570	class:Value	signature:() const
+asDouble	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^double Value::asDouble() const$/;"	function	line:611	class:Value	signature:() const
+asBool	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^bool Value::asBool() const$/;"	function	line:652	class:Value	signature:() const
+asString	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^std::string Value::asString() const$/;"	function	line:693	class:Value	signature:() const
+asValueVector	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^ValueVector& Value::asValueVector()$/;"	function	line:730	class:Value	signature:()
+asValueVector	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueVector& Value::asValueVector() const$/;"	function	line:736	class:Value	signature:() const
+asValueMap	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^ValueMap& Value::asValueMap()$/;"	function	line:742	class:Value	signature:()
+asValueMap	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMap& Value::asValueMap() const$/;"	function	line:748	class:Value	signature:() const
+asIntKeyMap	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^ValueMapIntKey& Value::asIntKeyMap()$/;"	function	line:754	class:Value	signature:()
+asIntKeyMap	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^const ValueMapIntKey& Value::asIntKeyMap() const$/;"	function	line:760	class:Value	signature:() const
+getTabs	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^static std::string getTabs(int depth)$/;"	function	line:766	file:	signature:(int depth)
+visitVector	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^static std::string visitVector(const ValueVector& v, int depth)$/;"	function	line:780	file:	signature:(const ValueVector& v, int depth)
+visitMap	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^static std::string visitMap(const T& v, int depth)$/;"	function	line:802	file:	signature:(const T& v, int depth)
+visit	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^static std::string visit(const Value& v, int depth)$/;"	function	line:822	file:	signature:(const Value& v, int depth)
+getDescription	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^std::string Value::getDescription() const$/;"	function	line:855	class:Value	signature:() const
+clear	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^void Value::clear()$/;"	function	line:862	class:Value	signature:()
+reset	/home/daichi/dev/cocos-projects/KawazJet/cocos2d/cocos/base/CCValue.cpp	/^void Value::reset(Type type)$/;"	function	line:904	class:Value	signature:(Type type)
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
+TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:35	class:Stage
+WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:36	class:Stage::TyleType
+PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:37	class:Stage::TyleType
+ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:38	class:Stage::TyleType
+COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:39	class:Stage::TyleType
+__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
+Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
+override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
+TyleType	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	enum class TyleType {$/;"	class	line:35	class:Stage
+WALL	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		WALL = 1 << 0,$/;"	member	line:36	class:Stage::TyleType
+PLAYER	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		PLAYER = 1 << 1,$/;"	member	line:37	class:Stage::TyleType
+ENEMY	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		ENEMY = 1 << 2,$/;"	member	line:38	class:Stage::TyleType
+COIN	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^		COIN = 1 << 3$/;"	member	line:39	class:Stage::TyleType
+FRAME_COUNT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int FRAME_COUNT = 4;$/;"	variable	line:7
+VELOCITY_LIMIT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int VELOCITY_LIMIT = 40;$/;"	variable	line:9
+INITIAL_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const Vec2 INITIAL_ACCELERATION = Vec2(200,0);$/;"	variable	line:11
+Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::Player()$/;"	function	line:14	class:Player	signature:()
+~Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::~Player()$/;"	function	line:19	class:Player	signature:()
+init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^bool Player::init()$/;"	function	line:24	class:Player	signature:()
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^void Player::update(float dt)$/;"	function	line:64	class:Player	signature:(float dt)
 SEARCH_PATH_3D	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_3D = "3d";$/;"	variable	line:6
 SEARCH_PATH_FONTS	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_FONTS = "fonts";$/;"	variable	line:7
 SEARCH_PATH_IMAGE	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_IMAGE = "image";$/;"	variable	line:8
@@ -19,26 +106,15 @@ SEARCH_PATH_MODEL	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp
 SEARCH_PATH_MUSIC	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_MUSIC = "music";$/;"	variable	line:12
 SEARCH_PATH_RES	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_RES = "res";$/;"	variable	line:13
 SEARCH_PATH_SE	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const char* SEARCH_PATH_SE = "se";$/;"	variable	line:14
-GRAVITY_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 GRAVITY_ACCELERATION = Vec2(0,-3);$/;"	variable	line:16
-IMPULSE_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 IMPULSE_ACCELERATION = Vec2(0,180);$/;"	variable	line:18
+GRAVITY_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 GRAVITY_ACCELERATION = Vec2(0,-10);$/;"	variable	line:16
+IMPULSE_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^const Vec2 IMPULSE_ACCELERATION = Vec2(0,200);$/;"	variable	line:18
 MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^MainScene::MainScene()$/;"	function	line:20	class:MainScene	signature:()
 ~MainScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^MainScene::~MainScene()$/;"	function	line:27	class:MainScene	signature:()
 init	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^bool MainScene::init()$/;"	function	line:32	class:MainScene	signature:()
-createScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^Scene* MainScene::createScene()$/;"	function	line:75	class:MainScene	signature:()
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^void MainScene::update(float dt)$/;"	function	line:99	class:MainScene	signature:(float dt)
-FRAME_COUNT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int FRAME_COUNT = 4;$/;"	variable	line:7
-VELOCITY_LIMIT	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const int VELOCITY_LIMIT = 40;$/;"	variable	line:9
-INITIAL_ACCELERATION	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^const Vec2 INITIAL_ACCELERATION = Vec2(200,0);$/;"	variable	line:11
-Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::Player()$/;"	function	line:14	class:Player	signature:()
-~Player	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^Player::~Player()$/;"	function	line:19	class:Player	signature:()
-init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^bool Player::init()$/;"	function	line:24	class:Player	signature:()
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Player.cpp	/^void Player::update(float dt)$/;"	function	line:60	class:Player	signature:(float dt)
-__STAGE_H__	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^#define __STAGE_H__$/;"	macro	line:2
-Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^class Stage :public cocos2d::Layer$/;"	class	line:7
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	bool init() override;$/;"	member	line:12	class:Stage
-override	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.h	/^	void update(float dt) override;$/;"	member	line:25	class:Stage
+createScene	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^Scene* MainScene::createScene()$/;"	function	line:83	class:MainScene	signature:()
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/MainScene.cpp	/^void MainScene::update(float dt)$/;"	function	line:107	class:MainScene	signature:(float dt)
 Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::Stage()$/;"	function	line:5	class:Stage	signature:()
 ~Stage	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Stage::~Stage()$/;"	function	line:12	class:Stage	signature:()
 init	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^bool Stage::init()$/;"	function	line:18	class:Stage	signature:()
 addPhysicsBody	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^Sprite* Stage::addPhysicsBody(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)$/;"	function	line:63	class:Stage	signature:(cocos2d::TMXLayer* layer,cocos2d::Vec2& cooridnate)
-update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:83	class:Stage	signature:(float dt)
+update	/home/daichi/dev/cocos-projects/KawazJet/Classes/Stage.cpp	/^void Stage::update(float dt)$/;"	function	line:96	class:Stage	signature:(float dt)
